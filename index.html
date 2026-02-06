@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>世界遺産 地球儀アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="globe"></div>
+
+  <div id="ui">
+    <input type="text" id="search" placeholder="世界遺産名を検索">
+    <input type="text" id="heritageInput" placeholder="世界遺産名を入力">
+    <input type="text" id="countryInput" placeholder="国名を入力">
+    <input type="text" id="descInput" placeholder="説明文を入力">
+    <button id="addBtn">ピン追加</button>
+  </div>
+
+  <div id="modal">
+    <div id="modalContent"></div>
+  </div>
+
+  <!-- ライブラリ -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+
+  <!-- 自作JS -->
+  <script src="script.js"></script>
+</body>
+</html>
 
