@@ -2,29 +2,31 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>世界遺産グローブ</title>
+  <title>世界遺産 地球儀アプリ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- ライブラリ（順番超重要） -->
+  <!-- ライブラリ（順番厳守） -->
   <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
   <script src="https://unpkg.com/globe.gl@latest/dist/globe.gl.min.js"></script>
 </head>
 <body>
 
-  <div id="ui">
-    <input id="search" type="text" placeholder="世界遺産名を検索">
-    <input id="name" type="text" placeholder="世界遺産名を入力">
-    <input id="country" type="text" placeholder="国名を入力">
-    <input id="desc" type="text" placeholder="説明文を入力">
-    <button id="add">ピン追加</button>
-  </div>
-
   <div id="globe"></div>
 
-  <!-- JS -->
+  <div id="ui">
+    <input type="text" id="search" placeholder="世界遺産名を検索" />
+    <input type="text" id="heritageInput" placeholder="世界遺産名を入力" />
+    <input type="text" id="countryInput" placeholder="国名を入力" />
+    <input type="text" id="descInput" placeholder="説明文を入力" />
+    <button id="addBtn">ピン追加</button>
+  </div>
+
+  <div id="modal">
+    <div id="modalContent"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
