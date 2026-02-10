@@ -1,3 +1,8 @@
+ <!-- ================= JS ================= -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl"></script>
+
+  <script>
 // ===== 世界遺産データ =====
 const data = [
   { name: "富士山", country: "日本", lat: 35.3606, lng: 138.7274, desc: "2013年に登録された日本を象徴する成層火山。" },
