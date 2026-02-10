@@ -95,4 +95,3 @@ document.getElementById("addBtn").addEventListener("click", async () => {
   countryInput.value = "";
   descInput.value = "";
 });
-
